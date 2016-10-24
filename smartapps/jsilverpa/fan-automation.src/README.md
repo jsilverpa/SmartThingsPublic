@@ -4,9 +4,9 @@
 This SmartApp is for use with SmartThings.   It turns on a fan when the outside temperature is X degrees cooler than the inside temperature.
 
 ## Features
-1) Ability to control the offset so that the fan will only run if the outside temperature is X (user-configurable) degrees cooler than the inside temperature.
-2) Optional motion controller to only run the fan if there is motion detected.
-3) Optional ability for manual fan-on/fan-off to override any automated settings for a user-configurable amount of time.
+* Ability to control the offset so that the fan will only run if the outside temperature is X (user-configurable) degrees cooler than the inside temperature.
+* Optional motion controller to only run the fan if there is motion detected.
+* Optional ability for manual fan-on/fan-off to override any automated settings for a user-configurable amount of time.
 
 ## Credits
 This SmartApp was inspired from Scottin Pollock's "Close/Open the Windows" SmartApp.
