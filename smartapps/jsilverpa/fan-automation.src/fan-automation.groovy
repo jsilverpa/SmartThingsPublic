@@ -17,8 +17,11 @@ definition(
     name: "Fan Automation",
     namespace: "jsilverpa",
     author: "Joshua Silver",
-    description: "Turns on a fan when the outside temperature is X degrees higher than the inside temperature. ",
-    category: "My Apps")
+    description: "Turns on a fan when the outside temperature is X degrees cooler than the inside temperature. ",
+    category: "My Apps",
+    iconUrl: "http://cdn.device-icons.smartthings.com/Appliances/appliances11-icn.png",
+    iconX2Url: "http://cdn.device-icons.smartthings.com/Appliances/appliances11-icn@2x.png")
+ 
 
 
 preferences {
@@ -87,6 +90,7 @@ def motionHandler(evt)
 //Instead, use this hack/workaround to see if the app changed the switch state recently and if so assume
 //that the source of this event was not a manual press of the device.
 def switchHandler(evt) {
+	
     double callDate = now();
     log.debug "call date $callDate, lastAppSwitchChange ${state.lastAppSwitchChange}"
     //if the app updated the switch < 5 seconds ago, assume this state switch was app initiated
